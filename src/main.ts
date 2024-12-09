@@ -18,15 +18,20 @@ WA.onInit().then(() => {
     });
 
     WA.room.area.onLeave('clock').subscribe(closePopup);
-
+    
     WA.room.area.onEnter('info').subscribe(() => {
+        currentPopup = WA.ui.openPopup("infoPopup", "1.Seguire una lezione\n2.Avvicinarsi alla lavagna\n3.Valutare relatore o studenti", []);
+    });
+
+    WA.room.area.onEnter('info1').subscribe(() => {
         currentPopup = WA.ui.openPopup("infoPopup", "1.Seguire una lezione\n2.Avvicinarsi alla lavagna\n3.Valutare relatore o studenti", []);
     });
 
     WA.room.area.onLeave('info').subscribe(closePopup);
 
-    WA.room.area.onEnter('valuta').subscribe(() => valuta());
+    WA.room.area.onLeave('info1').subscribe(closePopup);
 
+ù
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
         console.log('Scripting API Extra ready');
