@@ -46,8 +46,5 @@ function closePopup() {
     }
 }
 
-function valuta() {
-    console.log('Apertura della pagina laterale...');
-}
 
 export {};
