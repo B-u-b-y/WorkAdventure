@@ -156,9 +156,14 @@
          "opacity":1,
          "properties":[
                 {
+                 "name":"allowApi",
+                 "type":"bool",
+                 "value":true
+                }, 
+                {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/d093-46-102-64-29.ngrok-free.app"
+                 "value":"https:\/\/d8c2-46-102-64-29.ngrok-free.app"
                 }, 
                 {
                  "name":"openWebsitePolicy",
@@ -1219,8 +1224,19 @@
                  "y":614.378787878788
                 }, 
                 {
-                 "height":63.848484848485,
+                 "height":122.515151515152,
                  "id":32,
+                 "name":"info3",
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":78.2727272727275,
+                 "x":1385.81818181818,
+                 "y":770.818181818182
+                }, 
+                {
+                 "height":63.848484848485,
+                 "id":61,
                  "name":"info",
                  "rotation":0,
                  "type":"area",
@@ -1240,7 +1256,7 @@
                  "x":1056.18181818182,
                  "y":793.333333333333
                 }],
-         "offsetx":-0.666666666666629,
+         "offsetx":-0.333333333333371,
          "offsety":0,
          "opacity":1,
          "type":"objectgroup",
@@ -1410,8 +1426,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":71,
- "nextobjectid":61,
+ "nextlayerid":72,
+ "nextobjectid":62,
  "orientation":"orthogonal",
  "properties":[
         {

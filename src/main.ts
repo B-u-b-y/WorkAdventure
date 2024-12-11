@@ -27,6 +27,10 @@ WA.onInit().then(() => {
         currentPopup = WA.ui.openPopup("infoPopup", "1.Seguire una lezione\n2.Avvicinarsi alla lavagna\n3.Valutare relatore o studenti", []);
     });
 
+    WA.room.area.onEnter('info3').subscribe(() => {
+        currentPopup = WA.ui.openPopup("infoPopup", "1.Seguire una lezione\n2.Avvicinarsi alla lavagna\n3.Valutare relatore o studenti", []);
+    });
+
     WA.room.area.onLeave('info').subscribe(closePopup);
 
     WA.room.area.onLeave('info1').subscribe(closePopup);
